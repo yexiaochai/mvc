@@ -1,0 +1,113 @@
+
+
+.page-city .current-city {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  background-color: #fff;
+  padding-left: 18px;
+}
+
+.page-city .current-city strong {
+  font-weight: normal; 
+}
+
+.page-city .current-city .icon-location {
+  top: 5px;
+  padding-right: 10px;
+}
+
+.page-city .city-list {
+ background-color: #fff;
+ 
+}
+
+.page-city .city-list .grid-item {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.page-city .city-list .grid-item li {
+  width: 30%;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+  margin: 10px 3% 0 0;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  color: #00b358;
+}
+
+.page-city .city-list h2{
+ height: 30px;
+ line-height: 30px; 
+ background-color: #ededed;
+  padding: 0 10px;
+}
+
+.page-city .city-list.list-search h2{
+  background-color: #fff;
+  border-bottom: 1px solid  #ededed ;
+  height: 40px;
+ line-height: 40px; 
+}
+
+.page-city .city-list.list-search .list-item{
+  margin-left: 30px;
+}
+
+.page-city .city-list.list-search .list-item li{
+  padding-left: 0;
+}
+
+.page-city .city-list .list-item li{
+  border-bottom: 1px solid  #ededed ;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 30px 10px 25px;
+
+}
+
+.page-city .cm-search-bar .search-cancel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: 28px;
+  line-height: 28px; 
+  padding: 0 15px;
+  color: #fff;
+  display: none;
+}
+
+.page-city.search-active .cm-search-bar .cm-search-ele-wrap {
+   margin-right: 70px;
+}
+
+.page-city.search-active .current-city{
+  display: none;
+}
+
+.page-city.search-active .cm-search-bar .search-cancel {
+  display: block;
+}
+
+
+.page-city .nav-city-bar {
+  position: fixed;
+  width: 26px;
+  top: 95px;
+  right: 0;
+  text-align: center;
+  color: #00b358;
+  font-size: 10px;
+} 

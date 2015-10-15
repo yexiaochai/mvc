@@ -1,0 +1,23 @@
+﻿<% for(var ii = 0, ll = data.length; ii < ll; ii++) { %>
+<%
+  var obj = data[ii];
+  var k = _.keys(obj)[0];
+  var item = obj[k];
+%>
+  <div class="city-list ">
+  <%if(item.length > 0){ %>
+  <h2 class="<%if(k != 'history'){ %>js_group_name<%} %>">
+    <%=(k == 'history' ? '历史城市' : k) %></h2>
+    
+  <ul class=" <%=(k == 'history') ? 'grid-item' : 'list-item'%>  js_city_list">
+    <% for(var i = 0, len = item.length; i < len; i++) { %>
+      <li data-type="2" data-filter="<%=item[i].cnname %> <%=item[i].name %>" data-name="<%=item[i].cnname %>" data-city="<%=item[i].regionid %>" ><%=item[i].cnname%></li>
+    <%} %>
+  <%} %>
+  </ul>
+</div>
+<%} %>
+
+
+
+  

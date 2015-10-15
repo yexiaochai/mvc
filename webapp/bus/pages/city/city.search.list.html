@@ -1,0 +1,17 @@
+﻿<% for(var ii = 0, ll = data.length; ii < ll; ii++) { 
+ var item = data[ii];
+%>
+<div class="city-list list-search">
+  <h2 class="js_city_item" data-name="<%=item.title %>" data-city="<%=item.cityid %>" <%if(item.type == 1) { %> data-station="<%=item.stationid %>"<%} %>  data-type="<%=item.type %>">
+    <%=item.title %></h2>
+  <ul class="list-item js_city_list">
+    <% for(var i = 0, len = item.data.length; i < len; i++) { %>
+      <li data-type="<%=item.data[i].type %>" data-name="<%=item.data[i].title %>"  data-city="<%=item.cityid %>" <%if(item.data[i].type == 1) { %> data-station="<%=item.data[i].stationid %>" <%} %> ><%=item.data[i].title%></li>
+    <%} %>
+  </ul>
+</div>
+<%} %>
+
+
+
+  

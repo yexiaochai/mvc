@@ -1,0 +1,29 @@
+﻿<ul class="bus-list js_bus_list ">
+
+<% for(var i = 0, len = data.length; i < len; i++) {  %>
+<%var _item = data[i]; %>
+<%var _date = new Date (); %>
+<%var _bookingTitle = '预订'; %>
+
+<%_date.setTime(data[i].datetime * 1000); %>
+<% _date = _.dateUtil.getBeijingDate(_date); %>
+
+  <li data-key="<%=_item.id %>" class="bus-list-item <% if(_item.cansellcount == '无票'){ _bookingTitle='已售完' %> disabled <%} %> ">
+    <div class="bus-time">
+      <%=_.dateUtil.formatNum(_date.getHours()) + ':' + _.dateUtil.formatNum(_date.getMinutes()) %></div>
+    <div class="tobooking">
+      <%=_bookingTitle %></div>
+    <div class="detail">
+      <div class="sub-list">
+        <span class="start"><span class="icon-circle s-icon1"></span><%=_item.startstationname %></span> <span class="fr price">
+          ￥<%=_item.price/100 %></span>
+      </div>
+      <div class="sub-list">
+        <span class="end"><span class="icon-circle s-icon2"></span><%=_item.arrivalstationname %></span> <span class="fr b-tags js_tags"></span>
+      </div>
+    </div>
+  </li>
+<%} %>
+
+</ul>
+

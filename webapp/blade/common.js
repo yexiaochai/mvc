@@ -67,6 +67,9 @@
             'UIHeader': app + 'ui/ui.header',
             'T_UIHeader': app + 'ui/ui.header.html',
 
+            //新增多容器处理header问题
+            'NuomiHeader': app + 'ui/ui.nuomi.header',
+
             'UIToast': app + 'ui/ui.toast',
             'T_UIToast': app + 'ui/ui.toast.html',
 
